@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather App">
+    <meta name="keywords" content="HTML, CSS, JavaScript, places, weather">
+    <meta name="author" content="Mariam Sebua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fc44c3e5f3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400&display=swap" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Check the Weather...</h1>
+        <div class="search">
+            <input type="text" class="city" placeholder="Enter City">
+            <button type="button" class="search-button"><i class="fa-solid fa-magnifying-glass-location"></i>SEARCH</button>
+        </div>
+        <div class="inner-container">
+            <h1 class="weather-in"></h1>
+            <div class="main-info">
+                <div class="main-data">
+                    <p class="temperature"></p>
+                    <p class="main-weather"></p>
+                    <p class="description"></p>
+                </div>
+                <img class="weather-icon">
+            </div>
+            <div class="extra-info">
+                <p class="feels-like"></p>
+                <p class="min-temp"></p>
+                <p class="max-temp"></p>
+                <p class="humidity"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

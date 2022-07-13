@@ -1,0 +1,80 @@
+:root{
+    --dark-green: #16302B;
+    --purple: #694873;
+    --light-purple: #8B728E;
+    --green: #85B79D;
+    --light-green: #C0E5C8;
+    --white:#E2E2E2;
+}
+@keyframes slideIn {
+    0% {
+      width: 50%;
+      opacity: 0;
+    }
+    50% {
+        width: 75%;
+        opacity: 0.5;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+}
+body{
+    background-image: url(https://source.unsplash.com/1600x900/?city);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: slideIn 0.8s cubic-bezier(.32,.3,.68,.68);
+}
+body > .container{
+    margin: 25% auto;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(22,48,43, 0.9);
+    box-shadow: 5px 5px 20px var(--light-green);
+    border-radius: 10px;
+}
+.container > .inner-container{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container > .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+    width: 90%;
+    height: 10%;
+}
+.inner-container, .search{
+    margin: 0 auto;
+}
+.search > input,
+.search > button{
+    height: 25px;
+    border: 2px var(--light-green) ridge;
+    border-radius: 15px;
+    background-color: var(--green);
+    outline: none;
+}
+.search > input{
+    width: 60%;
+}
+.search > button{
+    width: 30%;
+}
+.search :hover{
+    cursor: pointer;
+}
+.inner-container > .main-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.inner-container > .extra-info{
+    margin: 0 auto;
+}
